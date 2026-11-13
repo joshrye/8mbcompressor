@@ -1,0 +1,6 @@
+target_mb = 7.5              # size the output must fit under (MB, > 0)
+min_audio_kbps = 48          # lowest audio bitrate the script may drop to (clamped to 8–128)
+favor = "video"              # "video": cut audio before dropping resolution
+                             # "audio": keep audio, drop resolution first
+stage4_min_audio_kbps = 96   # 480p last-resort audio rate when favor = "video"
+stage4_max_audio_kbps = 128  # 480p last-resort audio rate when favor = "audio"
